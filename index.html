@@ -1,181 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PWTC Oil</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="icon" type="image/png" href="/assets/images/PWTC_logo_big.png">
-</head>
-<body>
-  <div class="topnav">
-    <img src="/assets/images/PWTC_logo_big.png">
-    <a>Home</a>
-  </div>
-  <img src="/assets/images/banner.png" class="banner">
-  <br><br>
-  <!-- Opportunity Section -->
-  <div class="opportunity-container">
-    <h1>Opportunity</h1>
-    <p>
-      Be part of a game-changing venture with Petroleum World Trade Centre Sdn. Bhd. to develop the 
-      World Oil Trade Hub in one of the most pivotal locations for global oil trade—Selat Melaka. 
-      Positioned strategically along the world’s busiest maritime trade route, this tank farm project 
-      is set to redefine Southeast Asia's role in the oil and petroleum market.
-    </p>
-    <div class="image-row">
-      <img src="/assets/images/img18.jpg" alt="Pipelines">
-      <img src="/assets/images/img20.jpg" alt="Worker on site">
-      <img src="/assets/images/img19.jpg" alt="Industrial site">
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" type="image/png" href="/assets/images/PWTC_logo_big.png" />
+    <title>PWTC Oil</title>
+    <script language="JavaScript" type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+  </head>
+  <body>
 
-  <!-- Key Highlights Of The Project -->
-  <div class="advantages-container">
-    <h1>Key Highlights Of The Project</h1>
-    <div class="section">
-      <div class="text">
-        <h2>1. Strategic Location:</h2>
-        <ul>
-          <li>Situated at Umbai, Melaka, directly on the Straits of Malacca, through which 80% of global oil trade passes annually.</li>
-          <li>Access to key international markets in Asia-Pacific, the Middle East, and beyond.</li>
-        </ul>
+    <div class="nav">
+      <img src="/assets/images/PWTC_logo_big.png">
+      <div class="divider"></div>
+      <div class="top">
+        <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Home</a>
+        <a onclick="smoothScroll('opportunities')">Opportunities</a>
+        <a onclick="smoothScroll('key-highlights')">Key Highlights</a>
+        <a onclick="smoothScroll('investor-advantages')">Investor Advantages</a>
+        <a onclick="smoothScroll('perspectives')">Perspectives</a>
       </div>
-      <img src="/assets/images/a.jpg" alt="High Returns on Investment">
-    </div>
-    <div class="section">
-      <div class="text">
-        <h2>2. Comprehensive Infrastructure:</h2>
-        <ul>
-          <li>Development of state-of-the-art oil and petroleum storage facilities with scalable capacity.</li>
-          <li>Cutting-edge design for efficient storage, handling, and distribution of crude oil and refined petroleum products</li>
-        </ul>
-      </div>
-      <img src="/assets/images/img27.jpg" alt="Economic Impact">
-    </div>
-    <div class="section">
-      <div class="text">
-        <h2>3. World-Class Vision:</h2>
-        <ul>
-          <li>Establishing Melaka as a regional hub for oil storage, blending, and transshipment</li>
-          <li>Supporting Malaysia’s aspirations to be a global leader in oil and gas logistics.</li>
-        </ul>
-      </div>
-      <img src="/assets/images/b.jpg" alt="Long-Term Sustainability">
-    </div>
-    <div class="section">
-      <div class="text">
-        <h2>4. Market Potential:</h2>
-        <ul>
-          <li>Unprecedented growth in energy demand across Asia-Pacific.</li>
-          <li>Opportunities to serve energy-importing giants like China, India, and Japan.</li>
-        </ul>
-      </div>
-      <img src="/assets/images/c.jpg" alt="Exclusive Opportunity">
     </div>
 
-    <h1>Investor Advantages</h1>
-    <div class="section">
-      <div class="text">
-        <h2>1. High Returns on Investment:</h2>
-        <ul>
-          <li>Capitalize on the robust growth of global and regional energy markets.</li>
-          <li>Revenue streams from storage fees, logistics services, and value-added operations.</li>
-        </ul>
-      </div>
-      <img src="/assets/images/a.jpg" alt="High Returns on Investment">
+    <div class="landing-text">
+      <h1>INVESTMENT TEASER</h1>
+      <p>
+        Proposed Development and Construction of a Strategic Oil & Petroleum Product Tank Farm in Umbai, Melaka
+      </p>
     </div>
-    <div class="section">
-      <div class="text">
-        <h2>2. Economic Impact:</h2>
-        <p>
-          Anchor a landmark project in Melaka that supports Malaysia’s energy sector and creates
-          opportunities for local and international stakeholders.
-        </p>
-      </div>
-      <img src="/assets/images/img27.jpg" alt="Economic Impact">
-    </div>
-    <div class="section">
-      <div class="text">
-        <h2>3. Long-Term Sustainability:</h2>
-        <ul>
-          <li>The hub’s strategic importance ensures resilience against market volatility.</li>
-          <li>Alignment with Malaysia’s vision of sustainable energy and economic development.</li>
-        </ul>
-      </div>
-      <img src="/assets/images/b.jpg" alt="Long-Term Sustainability">
-    </div>
-    <div class="section">
-      <div class="text">
-        <h2>4. Exclusive Opportunity:</h2>
-        <p>
-          Early investors gain priority access to a high-demand asset in a fast-growing market.
-        </p>
-      </div>
-      <img src="/assets/images/c.jpg" alt="Exclusive Opportunity">
-    </div>
-  </div>
 
-  <!-- Call to Action Section -->
-  <div class="call-to-action">
-    <div class="cta-content">
+    <section class="opportunities" style="margin-top: 100vh; padding-top: 15vh;" id="firstSection" class="fade">
+      <h1>OPPORTUNITIES</h1>
+      <p>
+        Be part of a game-changing venture with Petroleum World
+        Trade Centre Sdn. Bhd. to develop the World Oil Trade Hub in
+        one of the most pivotal locations for global oil trade—Selat
+        Melaka. Positioned strategically along the world’s busiest
+        maritime trade route, this tank farm project is set to redefine
+        Southeast Asia's role in the oil and petroleum market.
+      </p>
+      <div class="image-grid">
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/img18.jpg" alt="Image 1"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/img20.jpg" alt="Image 2"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/img19.jpg" alt="Image 3"></div>
+      </div>
+      <p class="bt">Click on the image(s) above to enlarge</p>
+      <img class="decoleft" src="/assets/images/frpattern.png">
+    </section>
+
+    <section class="key-highlights">
+      <div id="particles-js"></div>
+      <h1>KEY HIGHLIGHTS<br>OF THE PROJECT</h1>
+      <h2>1. STRATEGIC LOCATION</h2>
+      <ul>
+        <li>Situated at Umbai, Melaka, directly on the Straits of Malacca, through which 80% of global oil trade passes annually.</li>
+        <li>Access to key international markets in Asia-Pacific, the Middle East, and beyond.</li>
+      </ul>
+      <h2>2. COMPREHENSIVE INFRASTRUCTURE</h2>
+      <ul>
+        <li>Development of state-of-the-art oil and petroleum storage facilities with scalable capacity.</li>
+        <li>Cutting-edge design for efficient storage, handling, and distribution of crude oil and refined petroleum products</li>
+      </ul>
+      <h2>3. WORLD-CLASS VISION</h2>
+      <ul>
+        <li>Establishing Melaka as a regional hub for oil storage, blending, and transshipment.</li>
+        <li>Supporting Malaysia’s aspirations to be a global leader in oil and gas logistics.</li>
+      </ul>
+      <h2>4. MARKET POTENTIAL</h2>
+      <ul>
+        <li>Unprecedented growth in energy demand across Asia-Pacific.</li>
+        <li>Opportunities to serve energy-importing giants like China, India, and Japan.</li>
+      </ul>
+      <img class="decoright" src="/assets/images/flpattern.png">
+    </section>
+
+    <section class="investor-advantages">
+      <h1>INVESTOR ADVANTAGES</h1>
+      <h2>1. HIGH RETURNS ON INVESTMENT</h2>
+      <ul>
+        <li>Capitalize on the robust growth of global and regional energy markets.</li>
+        <li>Revenue streams from storage fees, logistics services, and value-added operations.</li>
+      </ul>
+      <h2>2. ECONOMIC IMPACT</h2>
+      <ul>
+        <li>Anchor a landmark project in Melaka that supports Malaysia’s energy sector and creates opportunities for local and international stakeholders.</li>
+      </ul>
+      <h2>3. LONG-TERM SUSTAINABILITY</h2>
+      <ul>
+        <li>The hub’s strategic importance ensures resilience against market volatility.</li>
+        <li>Alignment with Malaysia’s vision of sustainable energy and economic development.</li>
+      </ul>
+      <h2>4. EXCLUSIVE OPPORTUNITY</h2>
+      <ul>
+        <li>Early investors gain priority access to a high-demand asset in a fast-growing market.</li>
+      </ul>
+    </section>
+
+    <section class="perspectives">
+      <h1>PERSPECTIVES</h1>
+      <div class="image-grid">
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/7.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/24.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/27.png"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/28.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/30.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/32.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/35.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/38.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/39.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/40.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/41.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/42.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/43.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/44.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/45.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/46.png"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/47.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/48.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/49.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/50.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/51.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/52.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/53.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/54.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/55.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/56.jpg"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/57.png"></div>
+        <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/58.jpg"></div>
+      </div>
+    </section>
+
+    <section class="call-to-action">
       <h1>CALL TO ACTION</h1>
-      <p>
-        We invite you to join this groundbreaking initiative and secure your position in shaping 
-        the future of the global petroleum trade. Together, we can create a world-class oil hub 
-        that cements Malaysia’s role in international energy markets while driving strong, 
-        sustainable returns for investors.
-      </p>
-      <p>
-        <strong>For detailed project insights, market analysis, and investment opportunities, 
-        please contact:</strong>
-      </p>
-      <p>
-        <strong>DATO’ SERI FARID IBRAHIM</strong><br>
-        Chairman<br>
-        Petroleum World Trade Centre Sdn. Bhd.<br>
-        014-2210780 | www.pwtcoil.com
-      </p>
-    </div>
-    <div class="cta-image">
-      <img src="/assets/images/img38.jpg" alt="Call to Action Industrial Site">
-    </div>
-  </div>
+      <div class="content-wrapper">
+        <img class="person-frame" src="/assets/images/dsfi.png" alt="Person Image">
+          <div class="text-content">
+              <p>We invite you to join this groundbreaking initiative and secure your position in shaping the future of the global petroleum trade. Together, we can create a world-class oil hub that cements Malaysia’s role in international energy markets while driving strong, sustainable returns for investors.</p>
+              <p class="highlight">For detailed project insights, market analysis, and investment opportunities, please contact:</p>
+              <p class="contact-info">
+                  <strong>DATO’ SERI FARID IBRAHIM</strong><br>
+                  Chairman<br>
+                  Petroleum World Trade Centre Sdn. Bhd.<br>
+                  <a href="tel:0142210780">014-2210780</a> | <a href="http://www.pwtcoil.com" target="_blank">www.pwtcoil.com</a>
+              </p>
+          </div>
+      </div>
+  </section>
 
-  <!-- Perspective -->
-  <div>
-    <div class="text">
-      <h1>Perspective</h1>
-      <img src="/assets/images/7.jpg" class="banner">
-      <img src="/assets/images/24.jpg" class="banner">
-      <img src="/assets/images/27.png" class="banner">
-      <img src="/assets/images/28.jpg" class="banner">
-      <img src="/assets/images/30.jpg" class="banner">
-      <img src="/assets/images/32.jpg" class="banner">
-      <img src="/assets/images/35.jpg" class="banner">
-      <img src="/assets/images/38.jpg" class="banner">
-      <img src="/assets/images/39.jpg" class="banner">
-      <img src="/assets/images/40.jpg" class="banner">
-      <img src="/assets/images/41.jpg" class="banner">
-      <img src="/assets/images/42.jpg" class="banner">
-      <img src="/assets/images/43.jpg" class="banner">
-      <img src="/assets/images/44.jpg" class="banner">
-      <img src="/assets/images/45.jpg" class="banner">
-      <img src="/assets/images/46.png" class="banner">
-      <img src="/assets/images/47.jpg" class="banner">
-      <img src="/assets/images/48.jpg" class="banner">
-      <img src="/assets/images/49.jpg" class="banner">
-      <img src="/assets/images/50.jpg" class="banner">
-      <img src="/assets/images/51.jpg" class="banner">
-      <img src="/assets/images/52.jpg" class="banner">
-      <img src="/assets/images/53.jpg" class="banner">
-      <img src="/assets/images/54.jpg" class="banner">
-      <img src="/assets/images/55.jpg" class="banner">
-      <img src="/assets/images/56.jpg" class="banner">
-      <img src="/assets/images/57.png" class="banner">
-      <img src="/assets/images/58.jpg" class="banner">
+    <footer class="footer">
+      <p id="c">&copy; 2024 PWTC Oil. All rights reserved.</p>
+    </footer>
+
+    <div class="image-modal">
+      <img id="modalimg" onclick="closeimgmodal()" src="">
+      <a>&times;</a>
     </div>
-  </div>
-  <script src="/assets/js/index.js"></script>
-</body>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/stars.js"></script>
+  </body>
 </html>
