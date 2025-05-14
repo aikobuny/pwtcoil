@@ -140,7 +140,7 @@ section p {
     position: relative;
 }
 
-.image-grid, .gallery-grid {
+.image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
@@ -152,22 +152,85 @@ section p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.grid-item, .gallery-item {
+.grid-item {
     overflow: hidden;
     border-radius: 8px;
     position: relative;
     cursor: pointer;
 }
 
-.grid-item img, .gallery-item img {
+.grid-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.grid-item img:hover, .gallery-item img:hover {
+.grid-item img:hover {
     transform: scale(1.1);
+}
+
+.gallery-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2vh;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
+}
+
+.gallery-carousel.expanded {
+    height: 600px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.gallery-carousel.expanded .carousel-track {
+    overflow: visible;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+.collapse-btn {
+    display: none;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.collapse-btn:hover {
+    background-color: #009999;
 }
 
 section ul {
@@ -353,6 +416,18 @@ section ul li {
     }
     .nav .top {
         display: none;
+    }
+
+    .gallery-carousel {
+        height: 150px;
+    }
+
+    .gallery-carousel.expanded {
+        height: 400px;
+    }
+
+    .gallery-item {
+        width: 120px;
     }
 }
 
