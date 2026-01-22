@@ -6,9 +6,6 @@
     <meta name="description" content="Strategic Oil & Petroleum Product Tank Farm Development in Umbai, Melaka.">
     <meta name="theme-color" content="#0b1d33">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" type="image/png" href="/assets/images/PWTC_logo_big.png" />
     <title>PWTC Oil</title>
@@ -37,16 +34,7 @@
       </p>
     </div>
 
-    <section class="video-showcase" style="margin-top: 100vh;">
-      <h1>PROJECT VIDEO</h1>
-      <p>Watch our comprehensive overview of the World Oil Trade Hub development.</p>
-      <div class="video-wrapper">
-        <iframe src="https://drive.google.com/file/d/1Q-_UdNjBHIBP6vaC4t5Woj3w0eJba0Kn/preview"
-                title="PWTC Oil Project Video" allow="autoplay" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <section class="gallery" style="padding-top: 5vh; padding-bottom: 5vh;" id="gallerySection" class="fade">
+    <section class="gallery" style="margin-top: 100vh; padding-top: 5vh; padding-bottom: 5vh;" id="gallerySection" class="fade">
       <h1>PROJECT GALLERY</h1>
       <p>Explore the vision and progress of the World Oil Trade Hub through our curated collection of images.</p>
       <div class="gallery-carousel">
@@ -82,7 +70,7 @@
       <p class="bt">Click an image to expand, click again to enlarge</p>
     </section>
 
-    <section class="opportunities reveal" style="padding-top: 5vh;" id="firstSection">
+    <section class="opportunities" style="padding-top: 5vh;" id="firstSection" class="fade">
       <h1>OPPORTUNITIES</h1>
       <p>
         Be part of a game-changing venture with Petroleum World
@@ -101,7 +89,7 @@
       <img class="decoleft" src="/assets/images/frpattern.png">
     </section>
 
-    <section class="corporate-structure reveal">
+    <section class="corporate-structure">
       <h1>CORPORATE STRUCTURE</h1>
       <h2 class="grid-title">Board Of Directors (BOD)</h2>
       <div class="grid" style="margin-top: 5vh;">
@@ -260,7 +248,7 @@
       <img class="decoright" src="/assets/images/flpattern.png">
     </section>
 
-    <section class="investor-advantages reveal">
+    <section class="investor-advantages">
       <h1>INVESTOR ADVANTAGES</h1>
       <h2>1. HIGH RETURNS ON INVESTMENT</h2>
       <ul>
@@ -282,7 +270,7 @@
       </ul>
     </section>
 
-    <section class="perspectives reveal">
+    <section class="perspectives">
       <h1>PERSPECTIVES</h1>
       <div class="image-grid">
         <div class="grid-item"><img onclick="modalimg(this)" src="/assets/images/7.jpg"></div>
@@ -316,7 +304,7 @@
       </div>
     </section>
 
-    <section class="call-to-action reveal">
+    <section class="call-to-action">
       <h1>CALL TO ACTION</h1>
       <div class="content-wrapper">
         <img class="person-frame" src="/assets/images/dsfi.png" alt="Person Image">

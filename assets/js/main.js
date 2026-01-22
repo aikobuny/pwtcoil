@@ -39,3 +39,26 @@ function smoothScroll(id){
 
 // Copyright footer
 document.getElementById('c').innerHTML = `&copy; ${new Date().getFullYear()} PWTC Oil. All rights reserved.`
+
+// Scroll Reveal Animation
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, revealOptions);
+
+    revealElements.forEach(el => revealObserver.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', initScrollReveal);
