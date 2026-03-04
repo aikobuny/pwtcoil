@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" type="image/png" href="/assets/images/PWTC_logo_big.png" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <title>PWTC Oil</title>
 
     <!-- jQuery required by stars.js -->
@@ -26,6 +27,7 @@
       <div class="nav-links" id="navLinks">
         <a onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</a>
         <a onclick="smoothScroll('opportunities')">Opportunities</a>
+        <a onclick="smoothScroll('project-timeline')">Timeline</a>
         <a onclick="smoothScroll('key-highlights')">Key Highlights</a>
         <a onclick="smoothScroll('investor-advantages')">Investor Advantages</a>
         <a onclick="smoothScroll('perspectives')">Perspectives</a>
@@ -40,6 +42,7 @@
       <div class="hero-content">
         <span class="hero-eyebrow">INVESTMENT TEASER</span>
         <h1 class="hero-title">World Oil <em>Trade Hub</em></h1>
+        <p class="hero-tagline">Malaysia's Largest Privatised Oil Storage Terminal — Coming to Umbai, Melaka</p>
         <p class="hero-subtitle">
           Proposed Development and Construction of a Strategic Oil &amp; Petroleum
           Product Tank Farm in Umbai, Melaka — Developer Of a 3,900,000 MT Farm Tank
@@ -50,9 +53,131 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </button>
       </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="374.4" data-decimals="1">0</span>
+          <span class="stat-unit">Acres</span>
+          <span class="stat-label">Reclaimed Land</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3.9" data-decimals="1">0</span><span class="stat-unit">M&nbsp;MT</span>
+          <span class="stat-label">Storage Capacity</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="72">0</span>
+          <span class="stat-unit">Months</span>
+          <span class="stat-label">to Completion</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="210">0</span>
+          <span class="stat-unit">Vessels/Day</span>
+          <span class="stat-label">Selat Melaka Traffic</span>
+        </div>
+      </div>
+
       <div class="hero-scroll-hint">
         <span>Scroll</span>
         <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ─── Project Vision ─── -->
+    <section class="project-vision">
+      <div class="vision-inner">
+        <div class="vision-text reveal">
+          <span class="vision-label">Artist's Impression</span>
+          <h2 class="vision-title">The Finished Vision</h2>
+          <p class="vision-desc">A world-class petroleum tank farm strategically positioned on the Straits of Malacca — featuring deep-water jetty access, scalable storage capacity, and state-of-the-art handling infrastructure designed for the global energy trade.</p>
+        </div>
+        <div class="vision-image-wrap reveal" data-delay="160">
+          <img src="/assets/images/illustration.png" alt="Illustration of the completed PWTC Oil tank farm at Umbai, Melaka" class="vision-image">
+          <div class="vision-caption">Proposed World Oil Trade Hub — Umbai, Melaka</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Project Timeline ─── -->
+    <section class="project-timeline" id="project-timeline">
+      <div class="section-inner">
+        <h1 class="section-title reveal">PROJECT TIMELINE</h1>
+        <p class="section-desc reveal" data-delay="100">
+          From approvals secured to a fully operational world-class terminal — a 72-month journey
+          that transforms Umbai, Melaka into Southeast Asia's premier oil storage hub.
+        </p>
+        <div class="timeline-track reveal" data-delay="220">
+
+          <div class="timeline-item" data-status="done">
+            <div class="tl-dot"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="tl-content">
+              <div class="tl-label">Inception Studies</div>
+              <div class="tl-desc">Completed</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="done">
+            <div class="tl-dot"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="tl-content">
+              <div class="tl-label">Planning Permission</div>
+              <div class="tl-desc">Pelan Kebenaran Merancang Obtained</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="done">
+            <div class="tl-dot"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="tl-content">
+              <div class="tl-label">Yayasan Melaka JV</div>
+              <div class="tl-desc">Agreement Formalised</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="done">
+            <div class="tl-dot"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="tl-content">
+              <div class="tl-label">Authority Approvals</div>
+              <div class="tl-desc">DOE · PLANMalaysia · Jabatan Laut</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="active">
+            <div class="tl-dot">
+              <div class="tl-pulse"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-label">Phase 1 — Reclamation</div>
+              <div class="tl-desc">Land Reclamation &amp; Dredging Works · 24 months</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="pending">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-label">Phase 2 — Infrastructure</div>
+              <div class="tl-desc">Roads, Utilities &amp; Marine Works</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="pending">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-label">Phase 3 — Tank Farm</div>
+              <div class="tl-desc">Tank Construction &amp; Commissioning · 48 months</div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-status="pending">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-label">Operations Commence</div>
+              <div class="tl-desc">World Oil Trade Hub — Open for Business</div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -123,6 +248,93 @@
       </div>
     </section>
 
+    <!-- ─── Strategic Location ─── -->
+    <section class="strategic-location">
+
+      <!-- Ocean background animations -->
+      <div class="ocean-bg" aria-hidden="true">
+
+        <!-- Shipping lane (dashed line + moving dots) -->
+        <div class="lane-track">
+          <div class="lane-dot ld1"></div>
+          <div class="lane-dot ld2"></div>
+          <div class="lane-dot ld3"></div>
+          <div class="lane-dot ld4"></div>
+        </div>
+
+        <!-- Oil tanker sailing right (eastbound) -->
+        <div class="ship-wrap ship-right">
+          <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M8,44 Q22,52 110,52 Q198,52 212,44 L206,39 L14,39 Z" opacity="0.9"/>
+            <rect x="18" y="29" width="172" height="10" rx="2"/>
+            <ellipse cx="62"  cy="22" rx="22" ry="10" opacity="0.85"/>
+            <ellipse cx="112" cy="22" rx="22" ry="10" opacity="0.85"/>
+            <rect x="162" y="10" width="26" height="19" rx="2"/>
+            <rect x="167" y="5"  width="16" height="6"  rx="1" opacity="0.8"/>
+            <line x1="18" y1="29" x2="8" y2="39" stroke="currentColor" stroke-width="2" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <!-- Oil tanker sailing left (westbound, flipped) -->
+        <div class="ship-wrap ship-left">
+          <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg" fill="currentColor" style="transform:scaleX(-1)">
+            <path d="M8,44 Q22,52 110,52 Q198,52 212,44 L206,39 L14,39 Z" opacity="0.9"/>
+            <rect x="18" y="29" width="172" height="10" rx="2"/>
+            <ellipse cx="62"  cy="22" rx="22" ry="10" opacity="0.85"/>
+            <ellipse cx="112" cy="22" rx="22" ry="10" opacity="0.85"/>
+            <rect x="162" y="10" width="26" height="19" rx="2"/>
+            <rect x="167" y="5"  width="16" height="6"  rx="1" opacity="0.8"/>
+            <line x1="18" y1="29" x2="8" y2="39" stroke="currentColor" stroke-width="2" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <!-- Subtle ocean wave -->
+        <svg class="ocean-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,30 C240,55 480,5 720,30 C960,55 1200,5 1440,30 L1440,60 L0,60 Z" fill="currentColor"/>
+        </svg>
+
+      </div>
+
+      <div class="section-inner">
+        <h1 class="section-title reveal">STRATEGIC LOCATION</h1>
+        <p class="section-desc reveal" data-delay="100">
+          Umbai, Melaka sits directly on the Strait of Malacca — the world's most critical energy
+          chokepoint. An estimated <strong>210 commercial vessels</strong> transit this waterway
+          every single day, carrying 80% of global oil trade.
+        </p>
+        <div class="location-grid reveal" data-delay="220">
+          <div class="location-stats-col">
+            <div class="loc-card">
+              <div class="loc-icon"><i data-lucide="globe-2"></i></div>
+              <div class="loc-figure">80%</div>
+              <div class="loc-text">of global oil trade passes through Selat Melaka annually</div>
+            </div>
+            <div class="loc-card">
+              <div class="loc-icon"><i data-lucide="ship"></i></div>
+              <div class="loc-figure">210</div>
+              <div class="loc-text">commercial vessels transit the strait every day</div>
+            </div>
+            <div class="loc-card">
+              <div class="loc-icon"><i data-lucide="landmark"></i></div>
+              <div class="loc-figure">MWEZ</div>
+              <div class="loc-text">Melaka World Economic Zone — free trade designation</div>
+            </div>
+          </div>
+          <div class="map-col">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.marinetraffic.com/en/ais/embed/zoom:9/centery:2.22/centerx:102.15/maptype:4/shownames:false/mmsi:0/shipid:0/fleet:/fleet_id:/vtypes:/showmenu:false/remember:false"
+                title="Live vessel traffic — Selat Melaka"
+                allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <p class="map-note">Live vessel tracking via MarineTraffic · Selat Melaka</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ─── Corporate Structure ─── -->
     <section class="corporate-structure alt-bg">
       <div class="section-inner">
@@ -155,52 +367,49 @@
         <h2 class="subsection-title reveal" data-delay="100" style="margin-top: 5vh;">Project Management Team</h2>
         <div class="cards-grid single-col reveal" data-delay="220">
           <div class="card card-wide">
-            <img src="assets/images/building_placeholder.png" alt="Thiviya Builders" class="profile-picture building-pic">
-            <div class="card-name">Thiviya Builders (M) Sdn Bhd</div>
-            <div class="card-body-text">
-              Function of Thiviya Builders (M) Sdn. Bhd. as a Project Management Consultant for Umbai, Melaka Reclamation Projects
-              <br><br>
-              As the Project Management Consultant (PMC) for the Umbai, Melaka Reclamation Projects, Thiviya Builders (M) Sdn. Bhd. is responsible for overseeing the successful planning, execution, and completion of the entire development in line with regulatory, environmental, and commercial objectives. Their key functions include:
-              <br><br>
-              <b>1. Project Planning &amp; Coordination</b>
-              <ul>
-                <li>Develop detailed project execution plans and timelines.</li>
-                <li>Coordinate between government agencies, stakeholders, contractors, and consultants.</li>
-                <li>Ensure alignment with state and federal land reclamation and development policies.</li>
-              </ul><br>
-              <b>2. Feasibility &amp; Technical Oversight</b>
-              <ul>
-                <li>Assist in the preparation and review of feasibility studies, including environmental impact assessments (EIA), hydrology, and soil investigations.</li>
-                <li>Provide expert recommendations on engineering design and marine works.</li>
-              </ul><br>
-              <b>3. Regulatory Compliance</b>
-              <ul>
-                <li>Facilitate applications and secure necessary approvals from authorities such as PLANMalaysia, DOE (Department of Environment), and Jabatan Laut.</li>
-                <li>Ensure all reclamation and development activities comply with Malaysian environmental and maritime laws.</li>
-              </ul><br>
-              <b>4. Procurement &amp; Contract Administration</b>
-              <ul>
-                <li>Advise on procurement strategy and tender management.</li>
-                <li>Evaluate bids and assist in the selection of qualified contractors and consultants.</li>
-                <li>Administer contracts to ensure adherence to scope, budget, and quality standards.</li>
-              </ul><br>
-              <b>5. Construction Supervision &amp; Quality Control</b>
-              <ul>
-                <li>Monitor construction activities for compliance with design specifications and safety regulations.</li>
-                <li>Conduct regular site inspections and report progress to stakeholders.</li>
-                <li>Implement quality assurance/control procedures throughout the reclamation and development process.</li>
-              </ul><br>
-              <b>6. Stakeholder Engagement &amp; Reporting</b>
-              <ul>
-                <li>Liaise with local communities, investors, and government agencies.</li>
-                <li>Provide regular progress reports, financial updates, and risk assessments to the project owner/investor consortium.</li>
-              </ul><br>
-              <b>7. Risk Management</b>
-              <ul>
-                <li>Identify potential risks related to environmental, technical, or financial aspects.</li>
-                <li>Develop mitigation strategies and contingency plans.</li>
-              </ul><br>
-              Thiviya Builders (M) Sdn. Bhd.'s expertise ensures that the Umbai Melaka Reclamation Projects are executed efficiently, sustainably, and within the strategic objectives of turning Umbai into a key maritime, commercial, and industrial hub under the Melaka Free Zone initiative.
+            <div class="pmc-header">
+              <img src="assets/images/building_placeholder.png" alt="Thiviya Builders" class="profile-picture building-pic">
+              <div>
+                <div class="card-name">Thiviya Builders (M) Sdn Bhd</div>
+                <div class="card-role">Project Management Consultant — Umbai, Melaka Reclamation Projects</div>
+              </div>
+            </div>
+            <div class="fn-grid">
+              <div class="fn-card">
+                <i data-lucide="list-checks" class="fn-icon"></i>
+                <div class="fn-title">Project Planning</div>
+                <div class="fn-desc">Execution plans, timelines &amp; stakeholder coordination</div>
+              </div>
+              <div class="fn-card">
+                <i data-lucide="file-search" class="fn-icon"></i>
+                <div class="fn-title">Technical Oversight</div>
+                <div class="fn-desc">EIA, hydrology, soil investigation &amp; engineering review</div>
+              </div>
+              <div class="fn-card">
+                <i data-lucide="shield-check" class="fn-icon"></i>
+                <div class="fn-title">Regulatory Compliance</div>
+                <div class="fn-desc">Approvals from DOE, PLANMalaysia &amp; Jabatan Laut</div>
+              </div>
+              <div class="fn-card">
+                <i data-lucide="clipboard-list" class="fn-icon"></i>
+                <div class="fn-title">Procurement &amp; Contracts</div>
+                <div class="fn-desc">Tender management, contractor evaluation &amp; contract admin</div>
+              </div>
+              <div class="fn-card">
+                <i data-lucide="wrench" class="fn-icon"></i>
+                <div class="fn-title">Construction Supervision</div>
+                <div class="fn-desc">Site inspections, quality control &amp; safety compliance</div>
+              </div>
+              <div class="fn-card">
+                <i data-lucide="bar-chart-2" class="fn-icon"></i>
+                <div class="fn-title">Stakeholder Reporting</div>
+                <div class="fn-desc">Progress reports, financial updates &amp; risk assessments</div>
+              </div>
+              <div class="fn-card">
+                <i data-lucide="alert-triangle" class="fn-icon"></i>
+                <div class="fn-title">Risk Management</div>
+                <div class="fn-desc">Identify &amp; mitigate environmental, technical &amp; financial risks</div>
+              </div>
             </div>
           </div>
         </div>
@@ -209,15 +418,30 @@
         <div class="cards-grid single-col reveal" data-delay="220">
           <div class="card card-wide">
             <div class="phases-container">
+
               <div class="phase-card">
+                <div class="phase-header">
+                  <div class="phase-title">
+                    <i data-lucide="users" class="phase-icon"></i>
+                    PMC Core Responsibilities
+                  </div>
+                  <span class="phase-badge badge-teal">Ongoing</span>
+                </div>
                 <ul>
                   <li>Checkers for Technical Engineering / Corporate Finance</li>
                   <li>Quantity Surveying &amp; Contracts</li>
                   <li>Report to BOD</li>
                 </ul>
               </div>
+
               <div class="phase-card">
-                <div class="phase-title">Phase 1 (Dredging &amp; Filling Works)</div>
+                <div class="phase-header">
+                  <div class="phase-title">
+                    <i data-lucide="layers" class="phase-icon"></i>
+                    Phase 1 — Dredging &amp; Filling
+                  </div>
+                  <span class="phase-badge badge-green">In Progress</span>
+                </div>
                 <div>
                   O &amp; L Jurutera Perunding Sdn Bhd
                   <ul>
@@ -225,8 +449,15 @@
                   </ul>
                 </div>
               </div>
+
               <div class="phase-card">
-                <div class="phase-title">Phase 2 (Infrastructure Works)</div>
+                <div class="phase-header">
+                  <div class="phase-title">
+                    <i data-lucide="building-2" class="phase-icon"></i>
+                    Phase 2 — Infrastructure Works
+                  </div>
+                  <span class="phase-badge badge-amber">Upcoming</span>
+                </div>
                 <div>
                   Petareka Perunding (M) Sdn Bhd
                   <ul>
@@ -239,16 +470,24 @@
                   <ul>
                     <li>Ir. Pui Syn Kong</li>
                   </ul>
-                  Planner &amp; Architect Architect Wan Chong
+                  Planner &amp; Architect
                   <ul>
                     <li>Ar. Jason Looi</li>
                   </ul>
                 </div>
               </div>
+
               <div class="phase-card">
-                <div class="phase-title">Phase 3 (Farm Tank)</div>
+                <div class="phase-header">
+                  <div class="phase-title">
+                    <i data-lucide="fuel" class="phase-icon"></i>
+                    Phase 3 — Tank Farm
+                  </div>
+                  <span class="phase-badge badge-blue">Open for EOI</span>
+                </div>
                 <div>Consultant to be appointed. Expressions of interest are open for qualified tank farm engineering firms.</div>
               </div>
+
             </div>
           </div>
         </div>
@@ -388,8 +627,7 @@
               <strong>DATO SERI FARID IBRAHIM</strong>
               Executive Chairman<br>
               Petroleum World Trade Centre Sdn. Bhd.<br>
-              <a href="tel:601111677236">+60 11-1167 7236 (WhatsApp)</a> |
-              <a href="tel:601111677236">+60 11-1167 7236 (Call)</a> |
+              <a href="mailto:support@pwtcoil.com">support@pwtcoil.com</a> |
               <a href="http://www.pwtcoil.com" target="_blank">www.pwtcoil.com</a>
             </div>
           </div>
@@ -399,7 +637,7 @@
 
     <!-- ─── Footer ─── -->
     <footer class="footer">
-      <p>© 2025 PWTC Oil. All rights reserved.</p>
+      <p>© 2026 PWTC Oil. All rights reserved.</p>
     </footer>
 
     <!-- ─── Image Modal ─── -->
@@ -411,5 +649,6 @@
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/stars.js"></script>
     <script src="/assets/js/carousel.js"></script>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
   </body>
 </html>

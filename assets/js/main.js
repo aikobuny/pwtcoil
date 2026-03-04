@@ -81,3 +81,24 @@ function initScrollReveal() {
 }
 
 document.addEventListener('DOMContentLoaded', initScrollReveal);
+
+// ─── Animated hero stat counters ──────────────────────────────
+function initCounters() {
+    document.querySelectorAll('.stat-num').forEach(el => {
+        const target   = parseFloat(el.dataset.target);
+        const decimals = parseInt(el.dataset.decimals || 0);
+        const duration = 1800;
+        const step     = 16;
+        const increment = target / (duration / step);
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current = Math.min(current + increment, target);
+            el.textContent = current.toFixed(decimals);
+            if (current >= target) clearInterval(timer);
+        }, step);
+    });
+}
+
+// Hero is immediately visible — start counting shortly after paint
+setTimeout(initCounters, 700);
