@@ -1,64 +1,83 @@
-window.addEventListener('scroll', function() {
-    const element = document.getElementById('firstSection');
-    const rect = element.getBoundingClientRect();
-  
-    if (rect.top <= 0) {
-        this.document.getElementsByTagName('body')[0].style.backgroundImage = 'none';
-        this.document.getElementsByClassName('nav')[0].classList.add('active');
-        this.document.getElementsByClassName('divider')[0].classList.add('active');
-        this.document.getElementsByClassName('top')[0].classList.add('active');
-    } else {
-        this.document.getElementsByTagName('body')[0].style.backgroundImage = `url('/assets/images/banner.jpg')`;
-        this.document.getElementsByClassName('nav')[0].classList.remove('active');
-        this.document.getElementsByClassName('divider')[0].classList.remove('active');
-        this.document.getElementsByClassName('top')[0].classList.remove('active');
-    }
-});
+// ─── Nav: scroll-based solid background ───────────────────────
+const navbar    = document.getElementById('navbar');
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.getElementById('navLinks');
 
-const modalimg_element = document.getElementsByClassName('image-modal')[0];
-const modalimg_projector = document.getElementById('modalimg');
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}, { passive: true });
+
+// ─── Mobile menu toggle ────────────────────────────────────────
+if (navToggle) {
+    navToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('open');
+        navToggle.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            navToggle.classList.remove('open');
+        });
+    });
+}
+
+// ─── Image modal ───────────────────────────────────────────────
+const imageModal  = document.getElementById('imageModal');
+const modalImgEl  = document.getElementById('modalimg');
 
 function modalimg(element) {
-    let url = element.getAttribute('src')
-    modalimg_element.classList.add('active');
-    modalimg_projector.setAttribute('src', url)
+    const url = element.getAttribute('src');
+    imageModal.classList.add('active');
+    modalImgEl.setAttribute('src', url);
+    document.body.style.overflow = 'hidden';
 }
 
-function closeimgmodal(element) {
-    modalimg_element.classList.remove('active');
-    modalimg_projector.removeAttribute('src')
+function closeimgmodal() {
+    imageModal.classList.remove('active');
+    modalImgEl.removeAttribute('src');
+    document.body.style.overflow = '';
 }
 
-function smoothScroll(id){
-    let element = document.getElementsByClassName(id)[0]
-    let y = element.getBoundingClientRect().top + window.scrollY -100;
-    window.scrollTo({top: y, behavior: 'smooth'})
+if (imageModal) {
+    imageModal.addEventListener('click', function (e) {
+        if (e.target === imageModal) closeimgmodal();
+    });
 }
 
-// document.getElementById('particles-js').setAttribute('width', window.innerWidth)
+// ─── Smooth scroll to section ─────────────────────────────────
+function smoothScroll(name) {
+    const el = document.querySelector('.' + name) || document.getElementById(name);
+    if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 86;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+}
 
-// Copyright footer
-document.getElementById('c').innerHTML = `&copy; ${new Date().getFullYear()} PWTC Oil. All rights reserved.`
-
-// Scroll Reveal Animation
+// ─── Scroll reveal with staggered data-delay ──────────────────
 function initScrollReveal() {
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealEls = document.querySelectorAll('.reveal');
 
-    const revealOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
+                const delay = parseInt(entry.target.dataset.delay || 0);
+                setTimeout(() => {
+                    entry.target.classList.add('revealed');
+                }, delay);
                 observer.unobserve(entry.target);
             }
         });
-    }, revealOptions);
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+    });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealEls.forEach(el => observer.observe(el));
 }
 
 document.addEventListener('DOMContentLoaded', initScrollReveal);
