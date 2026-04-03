@@ -583,7 +583,7 @@ section.alt-bg { background: var(--off-white); }
 .opportunities { background: white; }
 
 /* ─── Project Map ────────────────────────────────────────────── */
-.project-map { background: var(--surface); }
+.project-map { background: white; }
 .map-image-wrap {
   border-radius: 16px;
   overflow: hidden;
